@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advertising Campaign Manager</title>
+</head>
+<body>
+    <h1>Advertising Campaign Manager</h1>
+
+    <!-- Form for adding inventory -->
+    <h2>Add Inventory</h2>
+    <form method="POST" action="/add_inventory">
+        <input type="text" name="media_name" placeholder="Media Name" required>
+        <select name="ad_type">
+            <option value="display">Display</option>
+            <option value="newsletter">Newsletter</option>
+        </select>
+        <input type="number" name="total_slots" placeholder="Total Slots" required>
+        <button type="submit">Add Inventory</button>
+    </form>
+
+    <!-- Form for adding a campaign -->
+    <h2>Add Campaign</h2>
+    <form method="POST" action="/add_campaign">
+        <input type="text" name="campaign_name" placeholder="Campaign Name" required>
+        <input type="date" name="start_date" required>
+        <input type="date" name="end_date" required>
+        <select name="ad_type">
+            <option value="display">Display</option>
+            <option value="newsletter">Newsletter</option>
+        </select>
+        <button type="submit">Add Campaign</button>
+    </form>
+
+    <!-- Display inventory and campaigns -->
+    <h2>Current Inventory</h2>
+    <!-- Add logic to display inventory -->
+
+    <h2>Current Campaigns</h2>
+    <!-- Add logic to display campaigns -->
+</body>
+</html>
